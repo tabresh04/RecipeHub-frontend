@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* hide-scrollbar.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.wave{
+  width: 100%;
+  position: absolute;
+  bottom: 32.5%;
+}
+
+.wave2{
+  width: 100%;
+  position: absolute;
+  top: 6.5%;
+}
