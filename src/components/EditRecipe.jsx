@@ -17,7 +17,7 @@ function EditRecipe() {
     useEffect(() => {
         const fetchRecipe = async () => {
             try {
-                const res = await fetch(`http://localhost:5500/${id}`);
+                const res = await fetch(`https://recipehub-backend-t3eq.onrender.com:5500/${id}`);
                 const data = await res.json();
                 setRecipe(data);
             } catch (err) {
@@ -35,7 +35,7 @@ function EditRecipe() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch(`http://localhost:5500/edit-recipe/${id}`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/edit-recipe/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
