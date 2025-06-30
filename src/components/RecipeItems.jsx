@@ -10,7 +10,7 @@ function RecipeItems() {
 
     const handleLike = async (index, id) => {
         try {
-            const res = await fetch(`http://localhost:5500/like/${id}`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/like/${id}`, {
                 method: "POST"
             });
 
