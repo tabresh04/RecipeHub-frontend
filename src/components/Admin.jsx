@@ -14,7 +14,7 @@ function Admin() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const res = await fetch("http://localhost:5500/users/admin");
+                const res = await fetch("https://recipehub-backend-t3eq.onrender.com/users/admin");
                 const data = await res.json();
 
                 if (Array.isArray(data)) {
@@ -34,7 +34,7 @@ function Admin() {
         if (!confirm) return;
 
         try {
-            const res = await fetch(`http://localhost:5500/users/admin/${id}`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/users/admin/${id}`, {
                 method: "DELETE",
             });
 
