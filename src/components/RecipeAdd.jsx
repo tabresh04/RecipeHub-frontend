@@ -39,7 +39,7 @@ function RecipeAdd() {
         e.preventDefault();
 
         try {
-            const res = await fetch("http://localhost:5500/add-recipe", {
+            const res = await fetch("https://recipehub-backend-t3eq.onrender.com/add-recipe", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
