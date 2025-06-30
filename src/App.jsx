@@ -5,7 +5,7 @@ import './App.css'
 
 const getAllRecipes = async () => {
   let allRecipes = [];
-  await axios.get('http://localhost:5500').then(res => {
+  await axios.get('https://recipehub-backend-t3eq.onrender.com').then(res => {
     allRecipes = res.data;
   });
   return allRecipes;
@@ -14,7 +14,7 @@ const getAllRecipes = async () => {
 const favouriteLoader = async ({ params }) => {
   const userId = params.userId;
 
-  const res = await fetch(`http://localhost:5500/favourite/${userId}`);
+  const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/favourite/${userId}`);
   if (!res.ok) {
     const errText = await res.text();
     console.error("Backend response error:", errText);
