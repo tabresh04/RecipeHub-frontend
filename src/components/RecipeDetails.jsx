@@ -16,7 +16,7 @@ function RecipeDetails() {
         }
 
         try {
-            const res = await fetch(`http://localhost:5500/favourite`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/favourite`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
