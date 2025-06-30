@@ -16,7 +16,7 @@ function YourRecipes() {
     useEffect(() => {
         const fetchItem = async () => {
             try {
-                const res = await fetch(`http://localhost:5500/YourRecipes/${userId}`);
+                const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/YourRecipes/${userId}`);
                 const data = await res.json();
                 setYourRecipes(data);
             } catch (err) {
@@ -31,7 +31,7 @@ function YourRecipes() {
 
     const handleDelete = async (id) => {
         try {
-            const res = await fetch(`http://localhost:5500/${id}`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/${id}`, {
                 method: "DELETE",
             });
             if (res.ok) {
