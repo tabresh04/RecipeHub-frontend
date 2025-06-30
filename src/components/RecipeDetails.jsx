@@ -48,7 +48,7 @@ function RecipeDetails() {
     useEffect(() => {
         const fetchRecipe = async () => {
             try {
-                const res = await fetch(`http://localhost:5500/${id}`);
+                const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/${id}`);
                 const data = await res.json();
                 setRecipe(data);
             } catch (err) {
