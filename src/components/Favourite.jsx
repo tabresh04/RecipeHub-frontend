@@ -23,7 +23,7 @@ function Favourite() {
 
     const handleDelete = async (index, Id) => {
         try {
-            const res = await fetch(`http://localhost:5500/favourite/${Id}`, {
+            const res = await fetch(`https://recipehub-backend-t3eq.onrender.com/favourite/${Id}`, {
                 method: "DELETE"
             });
 
