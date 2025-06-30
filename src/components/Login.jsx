@@ -16,7 +16,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch("hhttps://recipehub-backend-t3eq.onrender.com/login", {
+            const res = await fetch("https://recipehub-backend-t3eq.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
