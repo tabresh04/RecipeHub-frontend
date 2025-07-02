@@ -1,18 +1,57 @@
-<<<<<<< HEAD
-# React + Vite
+# 🍽️ Recipe Hub – Frontend
 
-Project link - 
+A beautifully designed recipe-sharing web app where users can **discover**, **search**, and **share** their favorite dishes. Built using **React** and **Tailwind CSS**, with a sleek UI and dynamic search functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 🚀 Live Demo: [https://recipehub-frontend-f6ep.onrender.com](https://recipehub-frontend-f6ep.onrender.com)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+- **React.js** – UI library
+- **Tailwind CSS** – Utility-first CSS for responsive styling
+- **React Router** – Page navigation
+- **REST API** – Connected to backend (Node + Express)
+- **Render** – Hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# RecipeHub
->>>>>>> e547b2397cd6b0e55c5e96ad4f4d1e44f7adec99
+---
+
+## ✨ Features
+
+- 📝 Add and share your own recipes
+- ❤️ Like recipes (persisted via backend)
+- 🔍 Real-time search by name or ingredients
+- 🧾 View recipe details on dedicated pages
+- 📱 Fully responsive and mobile-friendly
+- 🎨 Modern UI with gradient backgrounds and glassmorphism effects
+
+---
+
+
+---
+
+## 🧠 How It Works
+
+- Recipes are fetched from a **MongoDB** backend via REST API
+- Users can search recipes by **title** or **ingredients**
+- Clicking a recipe shows a full **details page**
+- Liking a recipe sends a POST request to update the count
+
+---
+
+## 🚀 Getting Started Locally
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/tabresh04/RecipeHub-frontend.git
+git clone https://github.com/tabresh04/RecipeHub-backend.git
+
+cd RecipeHub-frontend
+npm install 
+npm run dev
+
+cd RecipeHub-backend
+npm install 
+npm start
+
+![image](https://github.com/user-attachments/assets/3c9cca8e-f3b7-4497-a7f8-e5a427d43534)
